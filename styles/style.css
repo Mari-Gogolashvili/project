@@ -53,9 +53,10 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    /* flex-wrap: wrap; */
+    
     margin: 2rem;
     flex-grow: 4;
+    /* flex-wrap: wrap; */
 }
 
 .first-container{
