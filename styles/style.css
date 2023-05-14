@@ -56,14 +56,14 @@ header nav ul li a:hover{
     
     margin: 2rem;
     flex-grow: 4;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .first-container{
     display: flex;
     flex-direction: column;
     flex-grow: 3;
-    /* background-color: red; */
+    background-color: red;
 }
 
 
