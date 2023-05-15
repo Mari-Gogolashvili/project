@@ -48,7 +48,176 @@ header nav ul li a:hover{
 
 
 /* content section starts */
+main{
+    display: grid;
+    grid-template-rows: repeat(11,1fr);
+    grid-template-columns: repeat(11,1fr);
+    height: 100%;
+    width: 100%;
+    gap: 2rem 2rem; 
+    padding: 1.2rem;
+}
+.image{
+    background-color: red;
+    grid-column: 1 / 9;
+    grid-row: 1 / 8;
+    background-image: url(/images/image-web-3-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.side-bar{
+    background-color: var(--very_dark_blue);
+    color: var(--white);
+    font-size: .7rem;   
+    grid-column: 9 / 12;
+    grid-row: 1 / 12;
+    padding: 2rem;
+}
+.side-bar .new{
+    color: var(--orange);
+    font-size: 4rem;
+    
+    
+}
+
+.side-bar h1{
+    color:var(--white);
+    margin: 2rem 0 ;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.side-bar h2{
+    color: var(--blue);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.content{
+    grid-column: 1 / 9;
+    grid-row: 8/ 12;
+
+}
+
+
+
+hr{
+    height: .1rem;
+    background-color: var(--blue);
+    width: 90%;
+    margin: 1rem  auto ;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(5,1fr);
+    height: 100%;
+    width: 100%;
+    gap:2rem;
+}
+
+.title{
+    grid-column: 1 / 3; 
+    grid-row: 1/ 6 ;
+}
+
+.title h1 ,
+.title h2,
+.title h3 {
+    font-size: 4rem;
+    color: var(--very_dark_blue);
+}
+.text{
+    grid-column: 3/6;
+    grid-row: 1/6 ;
+}
+.text p{
+    font-size: 2rem;
+    color: var(--dark_blue);
+ }
+
+button{
+    padding: 18px 30px;
+    background-color: var(--red);
+    border-radius: 5px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    margin: 2rem 0;
+
+
+} 
+button a{
+    color: var(--white);
+    font-size: 1.2rem;
+    
+}
+
+button:hover{
+    background-color: var(--very_dark_blue);
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Media queries */
+@media (max-width: 702px) {
+    main {
+      grid-template-rows: repeat(5,1fr );
+      grid-template-columns: repeat(5,1fr);
+      gap: 1rem;
+
+    }
+  
+    .image {
+      grid-column: 1 / 6;
+      grid-row: 1 / 2;
+      background-image: url(/images/image-web-3-mobile.jpg)
+    }
+  
+    .side-bar {
+      grid-column: 1 / 6;
+      grid-row: 4 /6;
+    }
+  
+    .content {
+      grid-column: 1 / 6;
+      grid-row: 2 / 4;
+    }
+    .container{ 
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    .title{
+        grid-column: 1 / 4; 
+        grid-row: 1/ 2 ;
+    }
+    
+    .text{
+        grid-column: 1/4;
+        grid-row: 2/4 ;
+    }
+
+  }
+
+
+  
 
 
 /* content section ends  */
