@@ -32,12 +32,12 @@ header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 1.4rem;
 }
 
 header nav ul li a {
     color: var(--dark_blue);
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 header nav ul li a:hover{
     color:var(--red);
@@ -86,6 +86,11 @@ main{
     margin: 2rem 0 ;
     font-size: 2rem;
     font-weight: 500;
+    cursor: pointer;
+}
+.side-bar h1:hover{
+    color: var(--orange);
+    transition: .2s;
 }
 .side-bar h2{
     color: var(--blue);
