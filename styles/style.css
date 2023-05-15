@@ -58,7 +58,7 @@ main{
     padding: 1.2rem;
 }
 .image{
-    background-color: red;
+    /* background-color: red; */
     grid-column: 1 / 9;
     grid-row: 1 / 8;
     background-image: url(/images/image-web-3-desktop.jpg);
@@ -165,11 +165,51 @@ button:hover{
 
 
 
+/* content section ends */
 
 
 
+/* cards section starts */
 
 
+section{
+    display: flex;
+    flex-direction: row;
+    padding: 1.2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    width: 32rem;
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+}
+.card-content{
+    padding-left:1.1rem ;
+
+}
+.card-content h1{
+    font-size: 4rem;
+    color: var(--blue);
+}
+.card-content h2{
+    font-size: 1.6rem;
+    color: var(--very_dark_blue);
+    margin-top: 2rem;
+}
+.card-content p{
+    font-size: 1.3rem;
+    color: var(--dark_blue);
+    margin-top: 2rem;
+    font-weight: 500;
+}
+/* cards section ends  */
 
 
 
@@ -181,7 +221,23 @@ button:hover{
 
 
   /* Media queries */
-@media (max-width: 702px) {
+
+@media (max-width: 1248px){
+    .image{
+        grid-column: 1 / 7;
+        grid-row: 1 / 8;
+    }
+    .side-bar{
+        grid-column: 7 / 12;
+        grid-row: 1 / 12;
+    }
+    .content{
+        grid-column: 1 / 7;
+        grid-row: 8/ 12;
+    }
+}
+  
+@media (max-width: 1070px) {
     main {
       grid-template-rows: repeat(5,1fr );
       grid-template-columns: repeat(5,1fr);
