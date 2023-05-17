@@ -241,6 +241,11 @@ section{
     font-size: 1.6rem;
     color: var(--very_dark_blue);
     margin-top: 2rem;
+    cursor: pointer;
+}
+.card-content h2:hover{
+    color: var(--orange);
+    transition: .3s;
 }
 .card-content p{
     font-size: 1.3rem;
