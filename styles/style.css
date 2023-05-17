@@ -98,7 +98,7 @@ main{
     /* background-color: red; */
     grid-column: 1 / 9;
     grid-row: 1 / 8;
-    background-image: url(/images/image-web-3-desktop.jpg);
+    background-image: url(../styles/images/image-web-3-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -292,7 +292,7 @@ section{
     .image {
       grid-column: 1 / 6;
       grid-row: 1 / 2;
-      background-image: url(/images/image-web-3-mobile.jpg)
+      background-image: url(../styles/images/image-web-3-mobile.jpg)
     }
   
     .side-bar {
