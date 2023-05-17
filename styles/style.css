@@ -22,29 +22,66 @@
 
 }
 /* header section starts  */
-header{
-    margin: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 1.4rem;
-}
 
-header nav ul li a {
-    color: var(--dark_blue);
-    font-size: 1.4rem;
+
+
+nav{
+    background-color: rgb(255, 255, 255);
+    height: 6rem;
+    width: 100%;
 }
-header nav ul li a:hover{
-    color:var(--red);
-    transition: .4s;
+  
+label.logo{
+    line-height: 6rem ;
+    padding: 0 3rem ;
+
+  
+    
+}
+label img{
+    margin-top: 1.2rem;
+    height: 3.5rem;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+  
+}
+nav ul li {
+    display:inline-block;
+    line-height: 6rem;
+    margin: 0 1.2rem;
+}
+  
+nav ul li a {
+    color: var(--dark_blue);
+    font-size: 2rem;
+
+  
+}
+nav ul li a:hover{
+    color: var(--orange);
+    transition: .5s;
+
+}
+  
+.checkbtn{
+    float: right;
+    line-height: 6rem;
+    margin-right: 2.2rem;
+    cursor: pointer;
+    display: none;
+}
+ 
+#check{
+    display: none;
+  
+}
+.menu{
+    height: 2rem;
+    width: 3rem;
 }
 /* header section ends  */
-
 
 
 /* content section starts */
@@ -169,6 +206,8 @@ button:hover{
 
 
 
+
+
 /* cards section starts */
 
 
@@ -279,6 +318,34 @@ section{
 
 
   
+@media (max-width:1013px){
+    .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        top: 80px;
+        left: 100%;
+        text-align: left;
+        padding: 3.7rem;
+        transition: all .5s;
+      }
+      nav ul li {
+        display: block;
+        margin: 2.5rem 0;
+        line-height: 2.9rem;
+      }
+      nav ul li a {
+        font-size: 2.3rem;
+        color:var(--very_dark_blue);
+      }  
+      #check:checked~ ul {
+        left: 30%;
+      }
+
+    }
 
 
-/* content section ends  */
